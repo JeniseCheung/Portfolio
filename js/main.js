@@ -122,8 +122,8 @@ function setupCarousel(carousel) {
     updatePosition();
   }
 
-  next.addEventListener('click', nextImg);
-  prev.addEventListener('click', prevImg);
+  next.addEventListener('pointerup', nextImg);
+  prev.addEventListener('pointerup', prevImg);
 
   dots.forEach((dot, i) => {
     dot.addEventListener('click', () => {
@@ -222,7 +222,9 @@ if (modal) {
     
     opts = opts || { }
 
-    var shouldCaptureFn = opts.shouldCaptureFn || function ( el ) { return true; };
+    var shouldCaptureFn = opts.shouldCaptureFn || function (el) {
+      return !el.closest('.prev, .go, .close');
+    };
 
     var limitToContainer = false;
     var limitPadding = opts.limitPadding || 50;

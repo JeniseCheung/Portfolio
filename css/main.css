@@ -1969,8 +1969,6 @@ font-size: 1.15rem;
 /* Responsiveness --------------- */
 
 @media screen and (max-width: 850px) {
-
-
   .nav_options{
     display:none;
   }
@@ -2384,7 +2382,7 @@ font-size: 1.15rem;
   .flex{
     display:flex;
     flex-direction: column;
-    width:85%;
+    width:90%;
 
   }
 
