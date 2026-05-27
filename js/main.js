@@ -331,7 +331,9 @@ if (modal) {
         return;
       }
       
-      event.preventDefault();
+      if (!event.target.closest('.prev, .go, .close')) {
+        event.preventDefault();
+      }
 
       lastPoints = getPoints( event );
       active++;
