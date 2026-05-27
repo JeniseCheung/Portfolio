@@ -2371,7 +2371,7 @@ font-size: 1.15rem;
 
   .style{
     position:relative;
-    left: 30%;
+    right: -30%;
   }
 
   .site-footer .align{

@@ -235,10 +235,12 @@ if (modal) {
     var active = 0;
     var lastPoints = [ ];
     var containerBounds;
-    
-    containerEl.addEventListener( 'mousedown', pointerPressed );
-    containerEl.addEventListener( 'touchstart', pointerPressed );
-    containerEl.addEventListener( 'wheel', wheelTurned );
+        
+    containerEl.addEventListener('pointerdown', pointerPressed);
+    containerEl.addEventListener('wheel', wheelTurned);
+    //containerEl.addEventListener( 'mousedown', pointerPressed );
+    //containerEl.addEventListener( 'touchstart', pointerPressed );
+    //containerEl.addEventListener( 'wheel', wheelTurned );
 
     window.addEventListener( 'resize', resized );
 
@@ -318,14 +320,16 @@ if (modal) {
     }
 
     function firstPointerPressed ( event ) {
-      document.addEventListener( 'mousemove', pointerMoved );
-      document.addEventListener( 'mouseup', pointerReleased );
-      document.addEventListener( 'touchmove', pointerMoved );
-      document.addEventListener( 'touchend', pointerReleased );
+      document.addEventListener('pointermove', pointerMoved);
+      document.addEventListener('pointerup', pointerReleased);
+      //document.addEventListener( 'mousemove', pointerMoved );
+      //document.addEventListener( 'mouseup', pointerReleased );
+      //document.addEventListener( 'touchmove', pointerMoved );
+      //document.addEventListener( 'touchend', pointerReleased );
     }
 
     function pointerPressed ( event ) {
-      if ( event.type == 'mousedown' && event.which != 1 ) {
+      if ( event.type == 'mousedown' && event.button != 0 ) {
         return;
       }
       
@@ -333,7 +337,7 @@ if (modal) {
         return;
       }
       
-      if (!event.target.closest('.prev, .go, .close')) {
+      if (event.pointerType && event.pointerType !== 'mouse') {
         event.preventDefault();
       }
 
@@ -384,10 +388,12 @@ if (modal) {
         return;
       }
 
-      document.removeEventListener( 'mousemove', pointerMoved );
-      document.removeEventListener( 'mouseup', pointerReleased );
-      document.removeEventListener( 'touchmove', pointerMoved );
-      document.removeEventListener( 'touchend', pointerReleased );
+      document.addEventListener('pointermove', pointerMoved);
+      document.addEventListener('pointerup', pointerReleased);
+      //document.removeEventListener( 'mousemove', pointerMoved );
+      //document.removeEventListener( 'mouseup', pointerReleased );
+      //document.removeEventListener( 'touchmove', pointerMoved );
+      //document.removeEventListener( 'touchend', pointerReleased );
     }
 
     function updateContainerBounds () {
@@ -465,7 +471,7 @@ const cursorBorderPos = { x: 0, y: 0 };
 
 const border = document.getElementById("minesweeper");
 
-document.addEventListener("mousemove", (e) => {
+document.addEventListener("pointermove", (e) => {
   //cursorPos.x = e.clientX;
   //cursorPos.y = e.clientY;
 
