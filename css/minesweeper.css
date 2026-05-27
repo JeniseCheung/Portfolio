@@ -1,0 +1,168 @@
+#board {
+    background-color: lightgray;
+    border-radius: 5px;
+    border: 5px solid #7B7B7B;
+    user-select: none;       
+    -webkit-user-select: none;
+    -moz-user-select: none;    
+    -ms-user-select: none;
+    transition: transform 0.2s ease;
+}
+
+#size-btns {
+    display: flex;
+    gap:5rem;
+    justify-content: center;
+}
+
+#size-btns {
+    display: flex;
+    gap:5rem;
+    justify-content: center;
+
+}
+
+.highlighted {
+    background-color: #b0e0e6;
+}
+
+.game-cell.holding {
+    border-top-color: #7B7B7B;
+    border-left-color: #7B7B7B;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+    background-color: #bdbdbd;
+}
+
+.holding {
+  border-top-color: #7B7B7B;
+  border-left-color: #7B7B7B;
+  border-right-color: #ffffff;
+  border-bottom-color: #ffffff;
+  background-color: #BDBDBD;
+}
+
+.game-board{
+    justify-items: center;
+    padding-bottom:-1rem;
+    padding-top:1rem;
+    padding-left: 1rem;
+    padding-right:1rem;
+}
+
+#modes{
+    text-align: center;
+    margin-bottom:1rem;
+}
+
+.level_button {
+    text-align: middle;
+    padding:.25rem;
+    background-color: #fff;
+    color: black;
+    border: 2px solid #7CA477;
+    border-radius: 5px;
+}
+
+
+.level_button:hover {
+    background-color: lightgray;
+    color: slategray;
+    cursor: pointer;
+}
+
+.level_button.selected {
+  background: #9DBB99;
+  color: white;
+  border-color: #49725A;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding:0;
+}
+
+#reset {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #7B7B7B;
+    border-bottom: 2px solid #7B7B7B;
+    border-left: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+#reset:hover {
+    border-top: 2px solid #9DBB99;
+    border-right: 2px solid #49725A;
+    border-bottom: 2px solid #49725A;
+    border-left: 2px solid #9DBB99;
+        background-color: #e0ffd3;
+}
+
+.revealed {
+    background-color: #C0C0C0;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+}
+
+#reset:hover {
+    cursor: pointer;
+}
+
+#status-bar  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px;
+    margin: 6px;
+    border-top: 2px solid #7B7B7B;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #7B7B7B;
+    border-radius: 5px;
+}
+
+td {
+    font-size: 1rem;
+    height: 25px;
+    width: 25px;
+    background-color: #C0C0C0;
+    border: 1.5px solid;
+    border-top-color: #ffffff;
+    border-right-color: #7B7B7B;
+    border-bottom-color: #7B7B7B;
+    border-left-color: #ffffff;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center; 
+}
+
+td img {
+    max-width: 90%; 
+    max-height: 90%;
+    display: block; 
+    align-self: center;
+    justify-self: center; 
+}
+
+
+
+#timer, #bomb-counter {
+    font-size: 2rem;
+    align-self: center;
+    letter-spacing: 1px;
+    color: red;
+    background-color: #ffffff;
+    text-align: center;
+    padding: .25rem .25rem;
+    line-height: 1em;
+    border-radius: 5px;
+    width:3.75rem;
+}

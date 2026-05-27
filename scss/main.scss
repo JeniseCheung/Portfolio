@@ -1,0 +1,83 @@
+.iframe {
+  border: none;
+}
+
+/* Default Styling --------------- */
+
+body {
+  font-family: "Poppins",sans-serif;
+  overflow-x:hidden;
+  margin:0;
+  padding:0;
+  background-color:#FFFFFF;
+}
+
+.element {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:2rem;
+}
+
+section {
+  margin: 0rem; 
+}
+
+h1 {
+  padding: 4rem;
+  font-size: 3em;
+  font-style: normal;
+  font-weight: lighter;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  margin-left: 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: normal;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: normal;
+}
+
+h6 {
+  font-style: normal;
+  font-weight: normal;
+}
+
+p {
+  width: 100%;
+  margin-top: 0;
+}
+
+a {
+  color:black;
+}
+
+a:hover{
+  color:#50A85E;
+}
+
+a.active:hover,
+a.active {
+  color: #50A85E ;
+}
+
+ul{
+  list-style: none;
+}
+
+/* Default Styling --------------- */

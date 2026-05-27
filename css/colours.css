@@ -1,0 +1,139 @@
+/*Home tags*/
+.orange {
+  background-color: #F7ECE0;
+  border: 1px solid #FDAB61;
+}
+
+.blue {
+  background-color: #E8F1FD;
+  border: 1px solid #438EAE;
+}
+
+.green {
+  background-color: #E8FBE6;
+  border: 1px solid #7CA477;
+}
+
+.yellow {
+  background-color: #fafbe6;
+  border: 1px solid #a3a477;
+}
+
+/* grey*/
+.grey{
+  color: #ACACAC;
+}
+
+/* Default colors */
+:root {
+  --primary-color: #84A37B;
+  --secondary-color:#4AA8CF; 
+  --link-color: #50a85e;
+  --hover-color: #9DBB99;
+  --mark-color: #D0ECF4;
+  --background-color: #E1E7DF;
+  --border-color: #49725A;
+  --button-color: #9DBB99;
+  --visited-color: #49725A;
+  --transparent-color:#7ca47754;
+  --quote-color:#7ca47754;
+}
+
+/* Intro colors */
+.intro-section h2 { color: var(--secondary-color); }
+
+/* Mini colors */
+.mini { color: var(--primary-color); }
+.mini2 { color: var(--secondary-color); }
+/* Text colors */
+.colour { color: var(--primary-color);
+  margin:0;
+}
+.colour2{ color: var(--secondary-color); }
+
+/* Background */
+.background { background-color: var(--background-color); }
+
+/* highlight  */
+mark { background-color: var(--mark-color); }
+
+/*line */
+.line { background-color: var(--primary-color);}
+
+.division::before { background: var(--secondary-color);}
+
+/* Links */
+.in-text-link { color: var(--link-color); }
+.in-text-link:hover { color: var(--hover-color); }
+
+summary { color: var(--link-color); }
+summary:hover { color: var(--hover-color); }
+
+.nav-colour:hover { color: var(--link-color); }
+.nav-colour.active { color: var(--link-color); }
+
+
+/*images*/
+.border_img {
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 5px var(--border-color); 
+}
+
+.border_carousel {
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 5px var(--border-color); 
+}
+
+
+/*video*/
+.border_video {
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 5px var(--border-color); 
+}
+
+/*project life*/
+.other-projects{
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 5px var(--border-color); 
+}
+
+.mobile-bottom-nav input:hover ~ .arrow button {
+  background-color: var(--button-color);
+}
+
+.arrow button{
+  border: 1px solid var(--visited-color);
+}
+
+.click:hover{
+  background-color: var(--button-color);
+  border: 2px solid var(--visited-color);
+}
+  
+.arrow button:before{
+  border-top: 2px solid var(--visited-color); 
+  border-right: 2px solid var(--visited-color);
+}
+
+.bottom-menu{
+  border: 1px solid var(--visited-color);
+  background-color: var(--transparent-color);
+}
+
+.dot:hover, .live{ background-color: var(--hover-color); }
+.point{ background-color: var(--secondary-color); }
+
+/*Design wise */
+.division .side h3::before {
+  background: var(--secondary-color);
+}
+
+.division .side::before {
+  background: var(--secondary-color);
+}
+
+.point::after {background: var(--secondary-color);}
+
+.quote{
+  border-left: 3px solid var(--quote-color);
+}
