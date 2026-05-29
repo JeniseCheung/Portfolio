@@ -57,7 +57,10 @@ body {
 */
 
 .middle{
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
@@ -1010,11 +1013,6 @@ input[type="radio"]:checked {
 .half{
   width:50%;
 }
-
-.categories{
-  margin-bottom:0.25rem;
-}
-
 
 details{
   padding:0rem;
@@ -2356,7 +2354,8 @@ font-size: 1.15rem;
   /*Footer*/
   .site-footer {
     padding: 2rem 0rem 2rem;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
   }
 
   .flex{
@@ -2480,6 +2479,7 @@ font-size: 1.15rem;
     display: flex;
     flex-direction: column;
     max-width: 95%;
+    min-width: 95%;
     margin-bottom: 2rem;
   }
   
@@ -2489,7 +2489,7 @@ font-size: 1.15rem;
   left: 50%;
   bottom: 1rem;
   transform: translateX(-50%);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   opacity: 0.5;
   }
 
@@ -2499,14 +2499,17 @@ font-size: 1.15rem;
   left: 50%;
   bottom: 1rem;
   transform: translateX(-50%);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   opacity: 0.5;
   }
 
   .project-row .content{
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 95%;
+    max-width: 95%;
+    margin-bottom: 3rem;
   }
-
 
   /*End of Index pages*/
 
@@ -2538,11 +2541,10 @@ font-size: 1.15rem;
     margin-right: auto;
   }
   */
+  
   .gif{
-  display: flex;
-  width:45%;
-  border-radius: 1.25rem;
-  justify-self: center;
+    display: block;
+    margin: 0 auto;
   }
 
   .right{
