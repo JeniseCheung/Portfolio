@@ -318,14 +318,10 @@ li a:hover:not(.active) {
   z-index:1;
 }
 
-.flex{
+.align{
+  justify-content: space-between;
   margin-left: 15%;
   margin-right: 15%;
-}
-
-.style{
-  position:absolute;
-  right: 15%;
 }
 
 .style a{
@@ -337,12 +333,9 @@ li a:hover:not(.active) {
 }
 
 .contact{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;   
-  gap: 3rem;
-  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem 3rem;
 }
 
 .contact-2{
@@ -832,6 +825,7 @@ input[type="radio"]:checked {
   align-items: center;
   margin-bottom: 0rem;
   padding-left:1rem;
+  padding-right:1rem;
 }
 
 .intro h1{
@@ -1034,12 +1028,12 @@ details[open] {
 
 .inline details{
   padding-bottom:1rem;
-  margin-top: -1.5rem;
+  margin-top: 0rem;
 }
 
 .inline details[open] {
   padding-bottom: 0rem;
-  margin-top: -1.5rem;
+  margin-top: 0rem;
 }
 
 .verti-center {
@@ -1969,6 +1963,10 @@ font-size: 1.15rem;
 /* Responsiveness --------------- */
 
 @media screen and (max-width: 850px) {
+  #cursor-border {
+  display:none;
+}
+  
   .nav_options{
     display:none;
   }
@@ -2360,30 +2358,13 @@ font-size: 1.15rem;
 
   /*Footer*/
   .site-footer {
-    padding: 1rem 0rem 1rem;
+    padding: 2rem 0rem 2rem;
     justify-items: center;
   }
 
-  .footer-info{
-    display:flex;
-    flex-direction: column;
-  }
-
-  .style{
-    position:relative;
-    right: -30%;
-  }
-
-  .site-footer .align{
-    display:flex;
-    flex-direction: row;
-  }
-
-  .flex{
-    display:flex;
-    flex-direction: column;
-    width:90%;
-
+  .align{
+  margin-left: 1%;
+  margin-right: 1%;
   }
 
   .contact{
@@ -2671,12 +2652,20 @@ font-size: 1.15rem;
     max-width: 7rem;
   }
 
+  .content{
+    max-width:90%;
+  }
+
   .leveled{
     padding:0;
   }
 
   .video{
     width:100%;
+  }
+
+  .game{
+    max-width: 50%;
   }
   /*reflection*/
 
