@@ -599,6 +599,21 @@ document.documentElement.style.setProperty('--mark-color', '#e5e9ae'); //mark
   document.documentElement.style.setProperty('--hover-color', 'rgb(166, 213, 179)');
   document.documentElement.style.setProperty('--mark-color', '#cce4d1'); //mark
 
+} else if (window.location.href.includes('venice.html')) {
+  document.documentElement.style.setProperty('--primary-color', '#363274'); // navy blue
+  document.documentElement.style.setProperty('--secondary-color', '#48429B'); // h2 text colour
+  document.documentElement.style.setProperty('--background-color', '#f0f0f0'); // background
+  document.documentElement.style.setProperty('--border-color', '#2b4154');
+  document.documentElement.style.setProperty('--transparent-color', '#779fa431');
+
+  //Hover links
+  document.documentElement.style.setProperty('--link-color', '#2f157e');  
+  document.documentElement.style.setProperty('--button-color', '#7e81ad'); 
+  document.documentElement.style.setProperty('--visited-color', '#1d0f40'); 
+  document.documentElement.style.setProperty('--hover-color', 'rgb(167, 166, 213)');
+  document.documentElement.style.setProperty('--mark-color', '#d5d5e3'); //mark
+
+
 } else if (window.location.href.includes('currents.html')) {
   document.documentElement.style.setProperty('--primary-color', '#115974'); // navy blue
   document.documentElement.style.setProperty('--secondary-color', '#5d5d5d'); // h2 text colour

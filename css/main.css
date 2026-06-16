@@ -344,7 +344,7 @@ li a:hover:not(.active) {
 .contact{
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 1rem;
+  gap: 2rem;
 }
 
 
@@ -430,7 +430,7 @@ code {
 
 .home .index-left {
   position: fixed;       /* stick this whole column to the page */
-  top: 37%;              /* vertically center the outline + button */
+  top: 42%;              /* vertically center the outline + button */
   left: 1rem;            /* horizontal position */
   display: flex;
   width: 15%; 
@@ -722,6 +722,10 @@ input[type="radio"]:checked {
 
 .extra:hover{
   cursor: pointer;
+}
+
+.outline{
+  border: 1px solid rgba(179, 183, 178, 0.638);
 }
 
 .overlay-container:hover .linked-img {
