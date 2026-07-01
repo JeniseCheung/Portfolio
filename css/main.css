@@ -74,10 +74,9 @@ h1 {
 }
 
 h2{
-  font-family: "Questrial", sans-serif;
-  font-weight: normal; /* Light */
-  font-size: 2rem;
-  margin: 0rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold; /* Semi-bold */
+  font-size: 1.25rem;
 }
 
 h3 {
@@ -918,6 +917,11 @@ input[type="radio"]:checked {
 .text h1{
   color:black;
   margin-bottom: 0.5rem;
+}
+
+.text h2{
+  color:black;
+  margin: 0.25rem 0;
 }
 
 .text p{
