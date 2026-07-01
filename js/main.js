@@ -511,6 +511,33 @@ requestAnimationFrame(function loop() {
   requestAnimationFrame(loop);
 });
 
+// index animation
+document.addEventListener('DOMContentLoaded', () => {
+  const lines = document.querySelectorAll('.reveal-line');
+  lines.forEach((line, i) => {
+    setTimeout(() => {
+      line.classList.add('visible');
+    }, 100 + i * 180);
+  });
+});
+
+// index card animation
+const cards = document.querySelectorAll('.content, .more-card');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const card = entry.target;
+      const index = [...cards].indexOf(card);
+      setTimeout(() => {
+        card.classList.add('visible');
+      }, index * 120);
+      observer.unobserve(card);
+    }
+  });
+}, { threshold: 0.1 });
+
+cards.forEach(card => observer.observe(card));
 
 // ------- COLOURS --------------------
 if (window.location.href.includes('adventureawaits.html')) {

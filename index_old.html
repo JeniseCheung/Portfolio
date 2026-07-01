@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Jenise Cheung | UX/UI Designer</title>
+  <link rel="icon" href="images/lemon.png">
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/colours.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Questrial&family=Sora:wght@300;400&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header>
+    <div class="topbanner">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/lemon.png" alt="lemon">
+          JC
+        </a>
+      </div>
+      <div class="nav_options">
+        <ul>
+          <li><a href="about.html" class="button-nav">About</a></li>
+          <li><a href="index.html#uxui" class="button-nav">Work</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  <!--<div id="cursor-border"></div>-->
+  <img id="cursor-border" src="images/fish.png" alt="fish cursor">
+
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler" id="toggle">
+    <div class="menu">
+      <ul>
+        <li><a href="about.html" class="button-nav">About</a></li>
+        <li><a href="index.html#uxui" class="button-nav">Work</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="hamburger">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <button class="navbar-toggler first-button animated-icon1" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#toggle" aria-controls="navbarToggleExternalContent9"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent9">
+    </div>
+  </div>
+
+  <div class="vertical-line"></div>
+  <section class="index">
+    <div class="index-box">
+      <!--Bottom Navigation-->
+      <div class="home">
+        <div class="index-left">
+          <h2>Selected Works</h2>
+          <a href="#uxui" class ="nav-colour">UX/ UI</a>
+          <a href="#experiences" class ="nav-colour">Visual Experiences</a>
+          <a href="#game" class ="nav-colour">Game Design</a>
+        </div>
+        <!--Back to top navigation-->
+        <div class="top-button"></div>
+        <!--End of back to top navigation-->
+      </div>
+
+      <div class="mobile-bottom-nav">
+        <input type="checkbox">
+
+        <div class="arrow">
+          <nav class="navbar">
+              <button class="navbar-toggler first-button animated-icon2" type="button"></button>
+          </nav>
+        </div>
+ 
+        <div class="bottom-menu">
+          <div class="mobile-bottom-nav__item">
+            <a href="#uxui" class="mobile-bottom-nav__item-content">UX/ UI</a>		
+          </div>
+
+          <div class="mobile-bottom-nav__item">
+            <a href="#game" class="mobile-bottom-nav__item-content">Visual Experiences</a>		
+          </div>          
+
+          <div class="mobile-bottom-nav__item">
+            <a href="#game" class="mobile-bottom-nav__item-content">Game Design</a>		
+          </div>
+
+          <div class="mobile-bottom-nav__item">
+          </div>
+        </div>
+      </div>
+      <!--End of Bottom Navigation-->
+
+      <div class="citations-right">
+        <div class = "introduction">
+          <div class="intro">
+            <h1>Hi! I Am</h1>
+            <h1><span class="name-green">Jenise Cheung,</span></h1>
+            <h1>A UX/ UI Designer</h1>
+            <br>
+            <p>With a passion for web design and development, as well as game design.</p>
+          </div>
+          
+          <div class="project-img">
+            <img src="images/HomePage/portrait.png"  alt="Portraint Drawing of Jenise Cheung" class="me">
+          </div>
+    
+        </div>
+          
+        <div class="inline">
+          <h2 class="left categories" id="uxui">UX/ UI</h2>
+          <details>
+            <summary>Legend (Tags)</summary>
+            <div class="tags">
+              <span class="tag green">Development & Technical</span>
+              <span class="tag orange">Design</span>
+              <span class="tag blue">Research & Strategy</span>
+              <span class="tag yellow">Interaction-Based</span>
+            </div>
+          </details>
+        </div>
+        <div class="line"></div>
+
+        <div class ="content-row">      
+          <div class = "content">
+            <div class="project-img">
+              <a href="blossom.html">
+                <div class = "overlay-container">
+                  <img src="images/Blossom/blossom.png"  alt="Blossom" class="linked-img" onclick="location.href='blossom.html';">
+                  <div class="overlay-text">June 2024</div>
+                </div>
+              </a>
+            </div>
+            <div class="text">
+              <div class="tags">
+                <span class="tag green">App Development</span>
+                <span class="tag blue">Research</span>
+              </div>
+              <h1>Blossom</h1>
+              <p class="description">Researching and providing a solution to increase user confidence and encourage good habits for lifelong plant care.</p>
+            </div>
+          </div>
+
+          <div class = "content">
+            <div class="project-img">
+              <a href="prosper.html">
+                <div class = "overlay-container">
+                  <img src="images/ProsperVancouver/ProsperVancouver.png"  alt="Microsite Prototype Example" class="linked-img" onclick="location.href='uxui/prosper.html';">
+                  <div class="overlay-text">Jan. 2023 - Apr. 2023</div>
+                </div>
+              </a>
+            </div>
+            <div class="text">
+              <div class="tags">
+                <span class="tag blue">Stakeholder Mgmt</span>
+                <span class="tag blue">Research</span>
+              </div>
+              <h1>Prosper Vancouver</h1>
+              <p class="description">Creating a non-interface solution for Prosper Vancouver to increase engagement and retention.</p>
+            </div>
+          </div>
+
+          <div class = "content">
+            <div class="project-img">
+              <a href="adventureawaits.html">
+                <div class = "overlay-container">
+                  <img src="images//AdventureAwaits/site.png"  alt="Microsite Prototype Example" class="linked-img" onclick="location.href='microsite.html';">
+                  <div class="overlay-text">July 2022 - Aug. 2022</div>
+                </div>
+              </a>
+            </div>
+            <div class="text">
+              <div class="tags">
+                <span class="tag green">Website Development</span>
+                <span class="tag orange">Front End</span>
+              </div>
+              <h1>Adventure Awaits Camping</h1>
+              <p class="description">Designing a microsite for beginner family campers. It informs them about various camping sites.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="inline">
+          <h2 class="left categories" id="experiences">Visual Experiences</h2>
+          <details>
+            <summary>Legend (Tags)</summary>
+            <div class="tags">
+              <span class="tag green">Development & Technical</span>
+              <span class="tag orange">Design</span>
+              <span class="tag blue">Research & Strategy</span>
+              <span class="tag yellow">Interaction-Based</span>
+            </div>
+          </details>
+        </div>
+
+        <div class="line"></div>
+
+        <div class ="content-row">       
+          <div class = "content">
+            <div class="project-img">
+              <a href="currents.html">
+                <div class = "overlay-container">
+                  <img src="images/CurrentsoftheMind/home.png"  alt="Currents of the Mind" class="linked-img">
+                  <div class="overlay-text">Jan. 2025 - Mar. 2025</div>
+                </div>
+              </a>
+            </div>
+            <div class="text">
+              <div class="tags">
+                <span class="tag green">VR/AR</span>
+                <span class="tag green">3D Modelling</span>
+                <span class="tag green">Coding</span>
+                <span class="tag yellow">Interaction Design</span>
+                <span class="tag yellow">Transformative Experience Design</span>
+              </div>
+              <h1>Currents of the Mind</h1>
+              <p class="description">Developing a VR journey about breaking free of self-doubt and rediscovering confidence and potential</p>
+            </div>
+          </div>
+
+          <div class = "content">
+            <div class="project-img">
+              <a href="venice.html">
+                <div class = "overlay-container">
+                  <img src="images/VeniceBiennale/home.png"  alt="Venice Biennale" class="linked-img" onclick="location.href='venice.html';">
+                  <div class="overlay-text">May 2024</div>
+                </div>
+              </a>
+            </div>
+            <div class="text">
+              <div class="tags">
+                <span class="tag orange">Visual Design</span>
+                <span class="tag orange">Art Direction</span>
+                <span class="tag yellow">Interaction Design</span>
+              </div>
+              <h1>Venice Biennale</h1>
+              <p class="description">Creating a microsite that archives and showcases the 2014 Venice Architecture Biennale, Fundamentals, an international architecture exhibition</p>
+            </div>
+          </div>
+
+          <div class = "content">
+            <div class="project-img">
+              <a href="aflicker.html">
+                <div class = "overlay-container">
+                  <img src="images/AFlickerofFriendship/home.png"  alt="A flicker of Flicker of Friendship" class="linked-img">
+                  <div class="overlay-text">Sept. 2024 - Dec. 2024</div>
+                </div>
+              </a>
+            </div>
+            <div class="text">
+              <div class="tags">
+                <span class="tag orange">Animation</span>
+                <span class="tag green">3D Modelling</span>
+              </div>
+              <h1>A Flicker of Friendship</h1>
+              <p class="description">Creating a short animation about friendship and connection in a dark forest through a lantern’s journey.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="inline">
+          <h2 class="left categories" id="game">Game Design</h2>
+          <details>
+            <summary>Legend (Tags)</summary>
+            <div class="tags">
+              <span class="tag green">Development & Technical</span>
+              <span class="tag orange">Design</span>
+              <span class="tag blue">Research & Strategy</span>
+              <span class="tag yellow">Interaction-Based</span>
+            </div>
+          </details>
+        </div>
+        <div class="line"></div>
+
+        <div class ="content-row">
+          <div class = "content">
+            <div class="project-img">
+              <a href="carpdiem.html">
+                <div class = "overlay-container">
+                  <img src="images/CarpDiem/home.png"  alt="Room Simulation Prototype Example" class="linked-img">
+                  <div class="overlay-text">Feb. 2026</div>
+                </div>
+              </a>
+            </div>
+            <div class="text">
+              <div class="tags">
+                <span class="tag green">Coding</span>
+                <span class="tag green">Game Jam</span>
+              </div>
+              <h1>Carp Diem</h1>
+              <p class="description">Developing a game, following a young fish who discovers a mysterious legend that those who complete three trials can ascend into a dragon.</p>
+            </div>
+          </div>
+          
+          <div class = "content">
+            <div class="project-img">
+              <a href="simulation.html">
+                <div class = "overlay-container">
+                  <img src="images/GloomyDayCleanUp/room.png"  alt="Gloomy Day Clean Up" class="linked-img">
+                  <div class="overlay-text">Nov. 2022 - Dec. 2022</div>
+                </div>
+              </a>
+            </div>
+            <div class="text">
+              <div class="tags">
+                <span class="tag green">Coding</span>
+              </div>
+              <h1>Gloomy Day Clean-Up Simulation</h1>
+              <p class="description">Creating a simulation game that involves organizing and cleaning a messy room</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->  
+  <footer class="site-footer">
+    <div class="flex">
+      <div class="align">
+        <div class="footer-info">
+          <p class="footer-name">Jenise Cheung</p>
+          <p>Thank you for viewing!</p>
+        </div>
+        <div class="style">
+          <p>Get in Touch:&#41;</p>
+          <div class="contact">
+            <a href="mailto:Jenise_c@hotmail.com">Email</a>
+            <a target="_blank" href="https://www.linkedin.com/in/jenise-cheung-0a1588214/">Linkedin</a>
+            <a target="_blank" href="https://www.figma.com/proto/ehGcPxeyEmJugYj4n8U25j/Resume?node-id=1-2&viewport=217%2C80%2C0.71&t=53zhXlpcugvblkeM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">Resume</a>
+            <a target="_blank" href="https://mangoulemon.itch.io/">Ich.io</a>
+          </div>
+        </div>
+      </div>
+      <p id="copyright">©2026 Designed and Coded by Jenise Cheung</p>
+    </div>
+  </footer>
+  <!--End of Footer-->  
+
+
+  <script src="js/main.js"></script>
+
+</body>
