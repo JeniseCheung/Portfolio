@@ -514,7 +514,15 @@ requestAnimationFrame(function loop() {
 // index animation
 document.addEventListener('DOMContentLoaded', () => {
   const lines = document.querySelectorAll('.reveal-line');
+
   lines.forEach((line, i) => {
+    const inner = line.querySelector('.reveal-inner');
+    inner.addEventListener('transitionend', () => {
+      if (line.classList.contains('visible')) {
+        line.style.overflow = 'visible';
+      }
+    });
+
     setTimeout(() => {
       line.classList.add('visible');
     }, 100 + i * 180);

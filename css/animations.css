@@ -7,7 +7,7 @@
 .reveal-inner {
   transform: translateY(110%);
   transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
-  display: inline-block;
+
   margin: 0;
 }
 
