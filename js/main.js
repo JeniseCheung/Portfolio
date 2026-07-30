@@ -158,7 +158,10 @@ if (modal) {
 
   var containerEl = document.querySelector( '.modal' );
   var contentEl = document.querySelector( '.modal-content' );
-  var workspace = PanZoom( contentEl, containerEl );
+  if ( ! window.matchMedia('(max-width: 850px)').matches ) {
+      var workspace = PanZoom( contentEl, containerEl );
+  //PanZoom(targetEl, containerEl, opts);
+  }
 
   // Loop through all images and add click
   for (let i = 0; i < images.length; i++) {
