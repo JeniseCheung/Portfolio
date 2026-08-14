@@ -573,7 +573,7 @@ if (window.location.href.includes('adventureawaits.html')) {
 document.documentElement.style.setProperty('--visited-color', '#3E4F3C');  
 document.documentElement.style.setProperty('--link-color', '#337e15');  
 document.documentElement.style.setProperty('--hover-color', '#337e15a2');
-document.documentElement.style.setProperty('--mark-color', '#e5e9ae'); //mark
+document.documentElement.style.setProperty('--mark-color', '#dbdfa7'); //mark
 
 } else if (window.location.href.includes('prosper.html')) {
   document.documentElement.style.setProperty('--primary-color', '#264285'); // navy blue
@@ -670,7 +670,7 @@ document.documentElement.style.setProperty('--mark-color', '#e5e9ae'); //mark
 } else if (window.location.href.includes('ctl.html')) {
   document.documentElement.style.setProperty('--primary-color', '#891359'); // navy blue
   document.documentElement.style.setProperty('--secondary-color', '#391069'); // h2 text colour
-  document.documentElement.style.setProperty('--background-color', '#ecedf8'); // background
+  document.documentElement.style.setProperty('--background-color', '#eaebf1'); // background
   document.documentElement.style.setProperty('--border-color', '#391069');
   document.documentElement.style.setProperty('--button-color', '#a67ead'); 
   document.documentElement.style.setProperty('--transparent-color', '#08060831');
