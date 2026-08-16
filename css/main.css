@@ -1224,10 +1224,6 @@ details[open] {
   width:100%;
 }
 
-.group{
-  text-align: center;
-}
-
 .group h2{
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -1237,47 +1233,47 @@ details[open] {
 }
 
 .project-description-2{
-  text-align: center;
   display: grid;
   grid-auto-flow: column;   
   grid-template-rows: repeat(2, auto); 
-  gap: 1rem;                   
+  row-gap: 4px;
+  column-gap: 2rem;
   height: fit-content;  
 }
 
 .project-description-3s{
-  text-align: center;
   display: grid;
   grid-auto-flow: column;   
-  grid-template-rows: repeat(3, auto); 
-  gap: 1rem;                   
+  grid-template-rows: repeat(3, auto);  
+  row-gap: 4px;
+  column-gap: 2rem;     
   height: fit-content;  
 }
 
 .project-description-3{
-  text-align: center;
   display: grid;
   grid-auto-flow: column;   
-  grid-template-rows: repeat(3, auto); 
-  gap: 1rem;                   
+  grid-template-rows: repeat(3, auto);    
+  row-gap: 4px;
+  column-gap: 2rem;      
   height: fit-content;  
 }
 
 .project-description-4{
-  text-align: center;
   display: grid;
   grid-auto-flow: column;       
   grid-template-rows: repeat(4, auto);
-  gap: 1rem;              
+  row-gap: 4px;
+  column-gap: 2rem;     
   height: fit-content;    
 }
 
 .project-description-6{
-  text-align: center;
   display: grid;
   grid-auto-flow: column;       
   grid-template-rows: repeat(4, auto);
-  gap: 1rem;              
+  row-gap: 4px;
+  column-gap: 2rem;           
   height: fit-content;    
 }
 

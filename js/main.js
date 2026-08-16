@@ -558,7 +558,7 @@ if (window.location.href.includes('adventureawaits.html')) {
   document.documentElement.style.setProperty('--secondary-color', '#4AA8CF');
 
   //mark
-  document.documentElement.style.setProperty('--mark-color', '#D0ECF4'); 
+  document.documentElement.style.setProperty('--mark-color', '#c1dee6'); 
 
 } else if (window.location.href.includes('blossom.html')) {
   document.documentElement.style.setProperty('--primary-color', '#577b54'); // navy blue
